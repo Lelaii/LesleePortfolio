@@ -380,11 +380,13 @@ html[data-w-dynpage] [data-w-cloak] {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  /* font-family: Poppins-Black, sans-serif; */
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 h1 {
+  /* font-family: 'Poppins-Black'; */
   margin-top: 20px;
   font-size: 38px;
   line-height: 44px;
@@ -2369,10 +2371,11 @@ figcaption {
 }
 
 .display-1 {
+  font-family: Poppins-Black, sans-serif;
   letter-spacing: -.01rem;
   flex: none;
   margin-bottom: 0;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.15;
 }
 
@@ -2381,6 +2384,7 @@ figcaption {
 }
 
 .display-2 {
+  font-family: Poppins-Black, sans-serif;
   letter-spacing: -.01rem;
   margin-bottom: 15px;
   font-size: 50px;
@@ -2392,6 +2396,7 @@ figcaption {
 }
 
 .display-3 {
+  font-family: Poppins-Black, sans-serif;
   letter-spacing: -.01rem;
   margin-bottom: 15px;
   font-size: 40px;
@@ -2434,15 +2439,15 @@ figcaption {
 }
 
 .link-hover:hover {
-  color: #7575c8;
+  color: #2bb281;
 }
 
 .background-primary {
-  background-color: #7575c8;
+  background-color: #2bb281;
 }
 
 .background-purple {
-  background-color: #e3e3ff;
+  background-color: #c9f9e0;
 }
 
 .background-blue {
@@ -2527,19 +2532,19 @@ figcaption {
   align-items: center;
   margin-left: 0;
   margin-right: 0;
-  padding: 25px 0;
-  font-family: Cabinet Grotesk, sans-serif;
+  padding: 15px 0;
+  font-family: Poppins-Black, sans-serif;
   font-size: 19px;
   font-weight: 700;
   display: flex;
 }
 
 .nav-link:hover {
-  color: #7575c8;
+  color: #2bb281;
 }
 
 .nav-link.w--current {
-  color: #7575c8;
+  color: #2bb281;
   transition: color .2s;
 }
 
@@ -2592,7 +2597,7 @@ figcaption {
 }
 
 .nav-link-mobile:hover {
-  color: #7575c8;
+  color: #2bb281;
 }
 
 .nav-link-mobile:focus-visible {
@@ -2787,6 +2792,7 @@ figcaption {
 .hero-image {
   border: 2px solid #1d1d1d;
   border-radius: 300px 300px 10px 10px;
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5)); /* Horizontal, Vertical, Blur */
 }
 
 .star-badge {
@@ -2880,6 +2886,11 @@ figcaption {
   display: flex;
 }
 
+.icon > img{
+  width: 50px;
+  height: 50px;
+}
+
 .about {
   padding-top: 140px;
   padding-bottom: 330px;
@@ -2900,6 +2911,7 @@ figcaption {
 .about-image {
   border: 2px solid #1d1d1d;
   border-radius: 50%;
+  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5)); /* Horizontal, Vertical, Blur */
 }
 
 .badge-text {
@@ -3150,7 +3162,7 @@ figcaption {
 }
 
 .button-link:hover {
-  color: #7575c8;
+  color: #2bb281;
   border-style: none;
 }
 
@@ -3284,11 +3296,11 @@ figcaption {
 }
 
 .footer-nav-link:hover {
-  color: #7575c8;
+  color: #2bb281;
 }
 
 .footer-nav-link.w--current {
-  color: #605dba;
+  color: #2bb281;
 }
 
 .doodle-cloud {
@@ -3376,7 +3388,7 @@ figcaption {
 }
 
 .rich-text-block a:hover {
-  color: #7575c8;
+  color: #2bb281;
 }
 
 .rich-text-block img {
@@ -4128,6 +4140,7 @@ figcaption {
   font-style: normal;
   font-display: block;
 }
+
 @font-face {
   font-family: 'Cabinet Grotesk';
   src: url('https://assets.website-files.com/644279d3e6787d5103f71a75/64428321dd0ba0512f15137a_CabinetGrotesk-Bold.otf') format('opentype');
@@ -4135,10 +4148,19 @@ figcaption {
   font-style: normal;
   font-display: block;
 }
+
 @font-face {
   font-family: 'Cabinet Grotesk';
   src: url('https://assets.website-files.com/644279d3e6787d5103f71a75/64428321db67fd6bdde1abb5_CabinetGrotesk-Extrabold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
   font-display: block;
+}
+
+@font-face {
+  font-family: Poppins-Black;
+  src: url('/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  /* font-weight: 1000;
+  font-style: normal;
+  font-display: block; */
 }
